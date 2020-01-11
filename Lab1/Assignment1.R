@@ -14,7 +14,6 @@ set.seed(12345)
 #the following code:
 Dataframe=read.csv2("spambase.csv")
 n=dim(Dataframe)[1]
-set.seed(12345)
 id=sample(1:n, floor(n*0.5))
 train=Dataframe[id,]
 test=Dataframe[-id,]
